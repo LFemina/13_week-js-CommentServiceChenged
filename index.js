@@ -50,7 +50,7 @@ const form = document.querySelector('form');
             const getRandomImage = () => randomImage[Math.floor(Math.random() * randomImage.length)];
             let pict = getRandomImage();
 
-            function showMessage(relult) {
+            function showMessage(result) {
                 const newMessage = document.createElement('div');
                 newMessage.classList.add("chat-result");
 
@@ -83,6 +83,6 @@ const form = document.querySelector('form');
                 document.getElementById('image').value = '';
                 document.querySelector('.chat-form-message').value = '';
             }
-            showMessage();
+            showMessage(result);
         }
         submitButton.addEventListener('click', messageFormHandler);
